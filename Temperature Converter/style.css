@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 
+        Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-image:
+        linear-gradient(rgb(112, 235, 198),
+                        rgb(212, 24, 24)); '
+                        /* rgb(20, 141, 20)*/
+     
+      background-image: linear-gradient(rgb(151, 144, 144),rgb(79, 148, 151));   
+/*       
+    background: linear-gradient(to bottom, #3633f3, #120fb9); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700; /* Yellow color for the sun */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* Adding a subtle glow */
+}
+
+
+.container h1 {
+    color: rgba(0, 0, 0, 0.676);
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.converter-row {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(49, 61, 49);
+    border-radius: 10px;
+    padding: 50px 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
+    transition: transform ease 1s, box-shadow ease 1s;
+    /* transition: 1s;
+    box-shadow: 3px 3px red, -1em 0 .4em; */
+}
+
+.col {
+    flex-basis: 32%;
+    text-align: center;
+}
+
+.col label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.col input {
+    width: 150px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+}
